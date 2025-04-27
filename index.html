@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Docker presentation</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>Docker</section>
+        <section>
+          <section>What is Docker?</section>
+          <section data-markdown>
+            <textarea data-template>
+              ### Set of different tools and services
+              <img src="./images/docker-tools.png" alt="docker tools">
+            </textarea>
+          </section>
+        </section>
+        <section>
+          <section>Docker use cases</section>
+          <section data-markdown>
+            <textarea data-template>
+              #### "Works on my machine!"
+              <img src="./images/works-on-my-machine.jpg" alt="meme" />
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+              #### Busy developer
+              - Participating in many projects
+              - Every project has it's own dependencies
+            </textarea>
+          </section>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            #### Docker is available for every popular OS:
+            - Windows
+            - macOS
+            - Linux
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            #### So how Docker helps us?
+            Docker's containerization and containers come to help.
+
+            <img src="./images/apps.png" alt="contianers">
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            #### Containers vs VMs
+            - Containers' startup time is shorter
+            - Containers perform faster
+            - Containers are more lightweight
+
+            <img src="./images/containers-vs-vms.png" height="450" alt="containers">
+          </textarea>
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ### Common Docker Terms/Objects
+              ##### Dockerfile
+              <img src="./images/dockerfile.png" alt="dockerfile example">
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+              ##### Docker Image
+              <img src="./images/docker-images.png" alt="docker images from hub">
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+              ##### Docker Container
+              <img src="./images/process.png" alt="process to create docker container">
+            </textarea>
+          </section>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ##### How to start
+            Docker desktop is a friendly and easy way in!
+            <img src="./images/docker-desktop.png" alt="docker-desktop">
+          </textarea>
+        </section>
+        <section>Thank you for your time and attention!</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
